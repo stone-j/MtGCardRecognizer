@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?><!--
+TO READ THIS XML IN HUMAN_READABLE TABLE FORMAT, DUMP THE XML INTO THIS UTILITY:
+http://codebeautify.org/xml-to-excel-converter
+--><config>	
+	<applicationName>TCG Wizard</applicationName>
+	<applicationWindow>
+		<width>1800</width>
+		<height>1000</height>
+	</applicationWindow>
+	<globalBGColor>
+		<red>45</red>
+		<green>14</green>
+		<blue>68</blue>
+	</globalBGColor>
+	<menubarColor>
+		<red>200</red>
+		<green>200</green>
+		<blue>200</blue>
+	</menubarColor>
+	<webcam>
+		<!--<name>HD Pro Webcam C920</name>-->
+		<name>Logitech BRIO</name>
+		<captureWidth>960</captureWidth>
+		<captureHeight>720</captureHeight>
+		<displayWidth>960</displayWidth>
+		<displayHeight>720</displayHeight>
+		<opencv>
+			<threshold>
+				<maximumMutation>2</maximumMutation>
+			</threshold>
+			<identifiedRegion>
+				<minRegionSizePercentage>20</minRegionSizePercentage>
+				<maxRegionSizePercentage>80</maxRegionSizePercentage>
+			</identifiedRegion>
+		</opencv>
+	</webcam>
+	<identifiedCard>
+		<width>312</width>
+		<height>445</height>
+	</identifiedCard>
+	<customFont>
+		<fileName>RussoOne-Regular.ttf</fileName>
+		<size>36</size>
+	</customFont>
+	<debounceLoops>5</debounceLoops>
+	<cardRemovedDebounceLoops>25</cardRemovedDebounceLoops>
+	<updateQuantities>1</updateQuantities>
+</config>

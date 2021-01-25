@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+
+<!--
+TO READ THIS XML IN HUMAN_READABLE TABLE FORMAT, DUMP THE XML INTO THIS UTILITY:
+http://codebeautify.org/xml-to-excel-converter
+-->
+
+<urls>	
+	<cardsImagePath>http://YOUR_DOMAIN_HERE.com/pictures/312/</cardsImagePath>
+	<cardBackImagePath>http://YOUR_DOMAIN_HERE.com/pictures/cardBack.png</cardBackImagePath>
+	<getCardInfoURL>http://YOUR_DOMAIN_HERE.com/getCardInfo.php?</getCardInfoURL>
+	<updateQtyURL>http://YOUR_DOMAIN_HERE.com/UpdateQty.php?</updateQtyURL>
+	<clearLastUpdateURL>http://YOUR_DOMAIN_HERE.com/ClearLastUpdate.php</clearLastUpdateURL>
+</urls>

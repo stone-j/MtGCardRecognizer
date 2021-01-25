@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="F:/My Documents/Processing/libraries/video/library/video.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="F:/My Documents/Processing/libraries/video/library/windows64"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="F:/My Documents/Processing/libraries/controlP5/library/controlP5.jar"/>
+	<classpathentry kind="lib" path="F:/My Documents/Processing/libraries/sound/library/sound.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/processing-3.3.7/core/library/core.jar"/>
+	<classpathentry kind="lib" path="F:/My Documents/Processing/libraries/video/library/gstreamer-java.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="F:/My Documents/Processing/libraries/video/library/windows64"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="F:/My Documents/Processing/libraries/video/library/jna.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="F:/My Documents/Processing/libraries/video/library/windows64"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/Core"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

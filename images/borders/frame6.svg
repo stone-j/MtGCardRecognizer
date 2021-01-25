@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="frame6.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="-656.44923"
+     inkscape:cy="941.59751"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1058"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#2d0e44;fill-opacity:1;stroke:none;stroke-width:0.27216682;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect815"
+       width="26.458334"
+       height="26.458334"
+       x="-196.54759"
+       y="31.660696" />
+    <rect
+       style="opacity:1;fill:#601f91;fill-opacity:1;stroke:none;stroke-width:0.33242249;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect817"
+       width="2.6458333"
+       height="26.45833"
+       x="-196.54759"
+       y="31.660698" />
+    <rect
+       y="31.660698"
+       x="170.08926"
+       height="26.45833"
+       width="2.6458333"
+       id="rect903"
+       style="opacity:1;fill:#561f7d;fill-opacity:1;stroke:none;stroke-width:0.33242249;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       transform="scale(-1,1)" />
+    <path
+       style="opacity:1;fill:#441667;fill-opacity:1;stroke:none;stroke-width:0.33242249;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m -172.75258,55.473197 2.66332,2.645833 h -26.45834 l 2.61607,-2.645833 z"
+       id="rect862"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="opacity:1;fill:#882ccc;fill-opacity:1;stroke:none;stroke-width:0.33242249;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m -170.08926,31.660696 -2.66332,2.645833 -21.17895,0 -2.61607,-2.645833 z"
+       id="rect864"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Guides"
+     style="display:none">
+    <rect
+       style="opacity:1;fill:#55d400;fill-opacity:1;stroke:none;stroke-width:5.82083321;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect912"
+       width="5.2916665"
+       height="5.2916665"
+       x="-196.54759"
+       y="31.660696"
+       inkscape:export-filename="F:\My Documents\Dropbox\Workspace\LegoRecognizer\images\frame06\top_left.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       y="31.660696"
+       x="-175.38092"
+       height="5.2916665"
+       width="5.2916665"
+       id="rect914"
+       style="opacity:1;fill:#55d400;fill-opacity:1;stroke:none;stroke-width:5.82083321;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       inkscape:export-filename="F:\My Documents\Dropbox\Workspace\LegoRecognizer\images\frame06\top_right.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="opacity:1;fill:#55d400;fill-opacity:1;stroke:none;stroke-width:5.82083321;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect916"
+       width="5.2916665"
+       height="5.2916665"
+       x="-175.38092"
+       y="52.827362"
+       inkscape:export-filename="F:\My Documents\Dropbox\Workspace\LegoRecognizer\images\frame06\bot_right.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       y="52.827366"
+       x="-196.54759"
+       height="5.2916665"
+       width="5.2916665"
+       id="rect918"
+       style="opacity:1;fill:#55d400;fill-opacity:1;stroke:none;stroke-width:5.82083321;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       inkscape:export-filename="F:\My Documents\Dropbox\Workspace\LegoRecognizer\images\frame06\bot_left.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       y="40.921116"
+       x="-196.54759"
+       height="5.2916665"
+       width="5.2916665"
+       id="rect920"
+       style="opacity:1;fill:#55d400;fill-opacity:1;stroke:none;stroke-width:5.82083321;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       inkscape:export-filename="F:\My Documents\Dropbox\Workspace\LegoRecognizer\images\frame06\left.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="opacity:1;fill:#55d400;fill-opacity:1;stroke:none;stroke-width:5.82083321;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect922"
+       width="5.2916665"
+       height="5.2916665"
+       x="-184.64134"
+       y="31.660696"
+       inkscape:export-filename="F:\My Documents\Dropbox\Workspace\LegoRecognizer\images\frame06\top.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       y="40.921116"
+       x="-175.38092"
+       height="5.2916665"
+       width="5.2916665"
+       id="rect924"
+       style="opacity:1;fill:#55d400;fill-opacity:1;stroke:none;stroke-width:5.82083321;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       inkscape:export-filename="F:\My Documents\Dropbox\Workspace\LegoRecognizer\images\frame06\right.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="opacity:1;fill:#55d400;fill-opacity:1;stroke:none;stroke-width:5.82083321;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect926"
+       width="5.2916665"
+       height="5.2916665"
+       x="-184.64134"
+       y="52.827366"
+       inkscape:export-filename="F:\My Documents\Dropbox\Workspace\LegoRecognizer\images\frame06\bot.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:export-filename="F:\My Documents\Dropbox\Workspace\LegoRecognizer\images\plain_purple\left.png"
+       style="opacity:1;fill:#55d400;fill-opacity:1;stroke:none;stroke-width:2.9104166;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect4640"
+       width="2.6458333"
+       height="2.6458333"
+       x="-191.25592"
+       y="36.952362" />
+    <rect
+       y="39.26646"
+       x="-180.91232"
+       height="0.26458332"
+       width="2.6458333"
+       id="rect4642"
+       style="opacity:1;fill:#55d400;fill-opacity:1;stroke:none;stroke-width:0.92035455;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       inkscape:export-filename="F:\My Documents\Dropbox\Workspace\LegoRecognizer\images\plain_purple\top_right.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       y="42.885345"
+       x="-188.71686"
+       height="7.9375"
+       width="7.9375"
+       id="rect4644"
+       style="opacity:1;fill:#55d400;fill-opacity:1;stroke:none;stroke-width:8.73124981;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       inkscape:export-filename="F:\My Documents\Dropbox\Workspace\LegoRecognizer\images\plain_purple\right.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

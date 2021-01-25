@@ -59,7 +59,7 @@ Need to debug exactly where the CPU bottleneck is
 It doesnt seem to be in the paint methods, but that could be a culprit.
 
 response time when a paging button is clicked is too slow-- either implement predictive caching, or some sort of hourglass/wait symbology
- */
+*/
 
 public class CardRecognizer {
 	

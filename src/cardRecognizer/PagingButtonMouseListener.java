@@ -11,6 +11,8 @@ public class PagingButtonMouseListener implements MouseListener {
 	static final int UP = 0;
 	static final int DOWN = 1;
 	
+	ConsoleHelper consoleHelper = new ConsoleHelper();
+	
 	private int pagingDirection;
 	
 	CardRecognizer cardRecognizer;
@@ -23,7 +25,7 @@ public class PagingButtonMouseListener implements MouseListener {
 	}
 	
 	public void mouseClicked(MouseEvent e) {
-		ConsoleHelper.PrintMessage("I have registered a click on the page " + (pagingDirection == 0 ? "Up" : "Down") + " button");
+		consoleHelper.PrintMessage("I have registered a click on the page " + (pagingDirection == 0 ? "Up" : "Down") + " button");
 
 		if (pagingDirection == UP) {
 			//bail out of the page doesn't change

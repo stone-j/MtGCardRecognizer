@@ -15,6 +15,8 @@ import processing.core.PImage;
 
 public class IdentifiedCardMasterBorderPanel extends GraphicalBorderPanel {
 	
+	ImageHelper imageHelper = new ImageHelper();
+	
 	JPanelPaintable rawIdentifiedCardPanel;
 	JPanelPaintable identifiedCardPanel;
 	JPanelPaintable identifiedCardMasterPanel;
@@ -44,14 +46,14 @@ public class IdentifiedCardMasterBorderPanel extends GraphicalBorderPanel {
 //			identifiedCardHeight
 //		));
 		
-		rawIdentifiedCardIcon = new ImageIcon(ImageHelper.getBufferedImageWithAlphaChannelFromURL(CardRecognizer.cardBackImagePath));		
+		rawIdentifiedCardIcon = new ImageIcon(imageHelper.getBufferedImageWithAlphaChannelFromURL(cardRecognizer.cardBackImagePath));		
 		rawIdentifiedCardLabel = new JLabel();
 		rawIdentifiedCardLabel.setIcon(rawIdentifiedCardIcon);
 		rawIdentifiedCardPanel.add(rawIdentifiedCardLabel);
 		rawIdentifiedCardLabel.setVisible(true);
 		rawIdentifiedCardPanel.setBackground(bgColor);
 		
-		identifiedCardIcon = new ImageIcon(ImageHelper.getBufferedImageWithAlphaChannelFromURL(CardRecognizer.cardBackImagePath));		
+		identifiedCardIcon = new ImageIcon(imageHelper.getBufferedImageWithAlphaChannelFromURL(cardRecognizer.cardBackImagePath));		
 		identifiedCardLabel = new JLabel();
 		identifiedCardLabel.setIcon(identifiedCardIcon);
 		identifiedCardPanel.add(identifiedCardLabel);
@@ -99,13 +101,13 @@ public class IdentifiedCardMasterBorderPanel extends GraphicalBorderPanel {
 	
 	
 	public void setRawImage(PImage image) {
-		rawIdentifiedCardIcon = new ImageIcon(ImageHelper.pImageToBufferedImage(image));	
+		rawIdentifiedCardIcon = new ImageIcon(imageHelper.pImageToBufferedImage(image));	
 		rawIdentifiedCardLabel.setIcon(rawIdentifiedCardIcon);
 		repaint();
 	}
 	
 	public void setImage(String imagePath) {
-		identifiedCardIcon = new ImageIcon(ImageHelper.getBufferedImageWithAlphaChannelFromURL(imagePath));			
+		identifiedCardIcon = new ImageIcon(imageHelper.getBufferedImageWithAlphaChannelFromURL(imagePath));			
 		identifiedCardLabel.setIcon(identifiedCardIcon);
 		repaint();
 	}

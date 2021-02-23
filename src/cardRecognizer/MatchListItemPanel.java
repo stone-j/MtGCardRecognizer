@@ -15,6 +15,8 @@ import processing.core.PImage;
 
 public class MatchListItemPanel extends JPanelPaintable {
 	
+	ImageHelper imageHelper = new ImageHelper();
+	
 	JPanelPaintable cardPanel;
 	JPanelPaintable textPanel;
 		
@@ -83,7 +85,7 @@ public class MatchListItemPanel extends JPanelPaintable {
 	}
 	
 	public void setCardImage(PImage p) {
-		cardImage.setIcon(new ImageIcon(ImageHelper.pImageToBufferedImage(p)));
+		cardImage.setIcon(new ImageIcon(imageHelper.pImageToBufferedImage(p)));
 	}
 	
 	public void setCardName(String s) {

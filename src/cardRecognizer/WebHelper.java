@@ -4,6 +4,9 @@ import core.ArrayHelper;
 import core.ProcessingHelper;
 
 public class WebHelper {
+	
+	ProcessingHelper processingHelper = new ProcessingHelper();
+	
 	String getCardInfoURL;
 	String updateQtyURL;
 	String clearLastUpdateURL;
@@ -17,7 +20,7 @@ public class WebHelper {
 	
 	public String[] getMatchResults (int index, int cardId) {
 
-		byte sendWebRequest4[] = ProcessingHelper.loadBytes	(
+		byte sendWebRequest4[] = processingHelper.loadBytes	(
 				getCardInfoURL +
 				"cardId=" + Integer.toString(cardId)
 				);
@@ -48,7 +51,7 @@ public class WebHelper {
 	
 	public String[] incrementQty(String cardId, boolean isFoil, int qty, boolean undoLastUpdate) {
 		
-		byte sendWebRequest[] = ProcessingHelper.loadBytes	(
+		byte sendWebRequest[] = processingHelper.loadBytes	(
 				updateQtyURL +
 				"cardId=" + cardId +
 				"&isFoil=" + (isFoil ? "1" : "0") + 
@@ -62,7 +65,7 @@ public class WebHelper {
 	
 	public void undoLastUpdate() {
 		
-		ProcessingHelper.loadBytes (
+		processingHelper.loadBytes (
 			updateQtyURL +
 			"cardId=-1" +
 			"&isFoil=0" +
@@ -73,6 +76,6 @@ public class WebHelper {
 	}
 	
 	public void clearLastUpdate() {
-		ProcessingHelper.loadBytes(clearLastUpdateURL);			
+		processingHelper.loadBytes(clearLastUpdateURL);			
 	}
 }

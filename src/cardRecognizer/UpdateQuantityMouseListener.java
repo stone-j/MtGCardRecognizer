@@ -11,6 +11,8 @@ public class UpdateQuantityMouseListener implements MouseListener {
 	
 	private int qty;
 	
+	ConsoleHelper consoleHelper = new ConsoleHelper();
+	
 	CardRecognizer cardRecognizer;
 	PagingHelper pagingHelper;
 	
@@ -22,9 +24,9 @@ public class UpdateQuantityMouseListener implements MouseListener {
 	}
 	
 	public void UpdateQuantity() {
-		ConsoleHelper.PrintMessage("I have registered a click on qty " + qty + " button");
-		ConsoleHelper.PrintMessage("pagingHelper.getFocusItem()[0] = " + pagingHelper.getFocusItem()[0]);
-		ConsoleHelper.PrintMessage("pagingHelper.getCurrentPageIndex() = " + pagingHelper.getCurrentPageIndex());
+		consoleHelper.PrintMessage("I have registered a click on qty " + qty + " button");
+		consoleHelper.PrintMessage("pagingHelper.getFocusItem()[0] = " + pagingHelper.getFocusItem()[0]);
+		consoleHelper.PrintMessage("pagingHelper.getCurrentPageIndex() = " + pagingHelper.getCurrentPageIndex());
 
 		if (pagingHelper.getCardId() != 0) {
 			//ConsoleHelper.PrintMessage("pagingHelper.getCardId() = " + pagingHelper.getCardId());

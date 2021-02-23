@@ -79,6 +79,12 @@ public class CardRecognizer {
 	int applicationHeight;
 	
 	XMLWorker xmlWorker = new XMLWorker();
+	ConsoleHelper consoleHelper = new ConsoleHelper();
+	LookAndFeelHelper lookAndFeelHelper = new LookAndFeelHelper();
+	WebcamHelper webcamHelper = new WebcamHelper();
+	ProcessingHelper processingHelper = new ProcessingHelper();
+	ImageHelper imageHelper = new ImageHelper();
+	FontHelper fontHelper = new FontHelper();
 	
 	int webcamXScaler;
 	int webcamYScaler;
@@ -311,7 +317,7 @@ public class CardRecognizer {
 	private void init() {
 		//size(1900, 740);
 		exceptionLogger = new ExceptionLogger();
-		LookAndFeelHelper.setLookAndFeel("Metal");
+		lookAndFeelHelper.setLookAndFeel("Metal");
 		
 		keyEventManager = new KeyEventManager(this);
 		
@@ -320,7 +326,7 @@ public class CardRecognizer {
 		
 		FileHelper.DeleteAllFilesInDirectory(System.getProperty("user.dir") + File.separator + "match_audits");
 		
-		webcam = WebcamHelper.getWebcam(webcamName, webcamCaptureWidth, webcamCaptureHeight, exceptionLogger);
+		webcam = webcamHelper.getWebcam(webcamName, webcamCaptureWidth, webcamCaptureHeight, exceptionLogger);
 		webcam.open(true); //set async = true so webcam does not block
 		webcamImage = webcam.getImage();
 		src = ImageHelper.bufferedImagetoPImage(webcamImage);
@@ -333,11 +339,11 @@ public class CardRecognizer {
 
 		//https://processing.org/reference/loadTable_.html
 		//this resolves to F:\My Documents\Dropbox\Workspace\MtGCardRecognizer\data\imageHashes.csv
-		cardHashTable = ProcessingHelper.loadTable(System.getProperty("user.dir") + "\\data\\imageHashes.csv", "csv");
+		cardHashTable = processingHelper.loadTable(System.getProperty("user.dir") + "\\data\\imageHashes.csv", "csv");
 
 		totalCards = cardHashTable.getRowCount();
 
-		ConsoleHelper.PrintMessage("total cards = " + Integer.toString(totalCards));
+		consoleHelper.PrintMessage("total cards = " + Integer.toString(totalCards));
 
 		allCardHashes = new Integer[totalCards][totalHashes + 1]; //index 0 is cardid, index 1-84 are the hash values
 		cardHashesToCompare = new int[totalHashes];
@@ -367,7 +373,7 @@ public class CardRecognizer {
 		cardFlipped = ProcessingHelper.createImage(cardWidth, cardHeight, PConstants.ARGB);
 		card2 = ProcessingHelper.createImage(cardWidth, cardHeight, PConstants.ARGB);
 
-		stockCard = ProcessingHelper.loadImage(cardBackImagePath);
+		stockCard = processingHelper.loadImage(cardBackImagePath);
 	}
 	
 	
@@ -442,7 +448,7 @@ public class CardRecognizer {
 	
 	public void saveMatchedImage() {
 		//save the composite image here, creating a pImage from the file path in the line above, and using the PImage variable "card".
-		PImage matchedImg = ImageHelper.bufferedImagetoPImage(ImageHelper.getBufferedImageWithAlphaChannelFromURL(cardsImagePath + editionCode.replace("con", "cfx").replace("CON", "cfx") + "/" + cardSeq + ".jpg"));
+		PImage matchedImg = ImageHelper.bufferedImagetoPImage(imageHelper.getBufferedImageWithAlphaChannelFromURL(cardsImagePath + editionCode.replace("con", "cfx").replace("CON", "cfx") + "/" + cardSeq + ".jpg"));
 		
 		matchedImg.resize(0, card.height);
 		PImage compositeMatches = new PImage(card.width + matchedImg.width, MathHelper.getMaximumValue(card.height, matchedImg.height), PConstants.ARGB);
@@ -731,7 +737,7 @@ public class CardRecognizer {
 				}
 			}
 
-			ConsoleHelper.PrintMessage("cardHashesToCompare.length = " + Integer.toString(cardHashesToCompare.length));
+			consoleHelper.PrintMessage("cardHashesToCompare.length = " + Integer.toString(cardHashesToCompare.length));
 
 			for (int i = 0 + p * totalCards; i < (p + 1) * totalCards; i++) {		
 				compareResults[i][0] = allCardHashes[i % totalCards][0]; //set the CardId
@@ -794,8 +800,8 @@ public class CardRecognizer {
 		pagingHelper.setCardId(cardId);
 		pagingHelper.setQtyOfLastUpdate(1);
 		pagingHelper.setFocusItem(0);
-		ConsoleHelper.PrintMessage("pagingHelper.getFocusItem()[0] = " + pagingHelper.getFocusItem()[0]);
-		ConsoleHelper.PrintMessage("pagingHelper.getCurrentPageIndex() = " + pagingHelper.getCurrentPageIndex());
+		consoleHelper.PrintMessage("pagingHelper.getFocusItem()[0] = " + pagingHelper.getFocusItem()[0]);
+		consoleHelper.PrintMessage("pagingHelper.getCurrentPageIndex() = " + pagingHelper.getCurrentPageIndex());
 
 		if (updateQuantities != 0) {
 			updateTimestamp = webHelper.incrementQty(Integer.toString(cardId), false)[0];
@@ -831,7 +837,7 @@ public class CardRecognizer {
 		//storageLocationId 	= matchResultsDetails[0][6];
 
 		setOfLastCard = editionCode;
-		ConsoleHelper.PrintMessage("setOfLastCard = " + setOfLastCard);
+		consoleHelper.PrintMessage("setOfLastCard = " + setOfLastCard);
 		//----------------------------------------------------------------------------------
 		//----------------------------------------------------------------------------------
 
@@ -883,14 +889,14 @@ public class CardRecognizer {
 
 		for (int r = 0; r < matchResultsDetails.length; r++) { 
 
-			 ConsoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][0] = " + matchResultsDetails[r][0]);
-			 ConsoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][1] = " + matchResultsDetails[r][1]);
-			 ConsoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][2] = " + matchResultsDetails[r][2]);
-			 ConsoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][3] = " + matchResultsDetails[r][3]);
-			 ConsoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][4] = " + matchResultsDetails[r][4]);
-			 ConsoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][7] = " + matchResultsDetails[r][7]);
+			 consoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][0] = " + matchResultsDetails[r][0]);
+			 consoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][1] = " + matchResultsDetails[r][1]);
+			 consoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][2] = " + matchResultsDetails[r][2]);
+			 consoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][3] = " + matchResultsDetails[r][3]);
+			 consoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][4] = " + matchResultsDetails[r][4]);
+			 consoleHelper.PrintMessage("matchResultsDetails[" + Integer.toString(r) + "][7] = " + matchResultsDetails[r][7]);
 
-			PImage myCard = ProcessingHelper.loadImage(cardsImagePath + matchResultsDetails[r][0].replace("con", "cfx").replace("CON", "cfx") + "/" + matchResultsDetails[r][1] + ".jpg");
+			PImage myCard = processingHelper.loadImage(cardsImagePath + matchResultsDetails[r][0].replace("con", "cfx").replace("CON", "cfx") + "/" + matchResultsDetails[r][1] + ".jpg");
 			PImage myCardCrop = new PImage(259, 196);
 			if (myCard != null) {
 				myCardCrop = myCard.get(25, 46, 259, 196);
@@ -911,7 +917,7 @@ public class CardRecognizer {
 	
 	
 	public void undoMatch() {
-		ConsoleHelper.PrintMessage("I have registered a match cancel button!");
+		consoleHelper.PrintMessage("I have registered a match cancel button!");
 
 		if (pagingHelper.focusItemExistsOnCurrentPage() && pagingHelper.getFocusItem()[1] != -1) {
 			matchResultsDetails[0][3] = Integer.toString(Integer.parseInt(matchResultsDetails[0][3]) - 1);
@@ -1006,7 +1012,7 @@ public class CardRecognizer {
 		debounceLoops = xmlWorker.GetIntFromXml("debounceLoops");
 		cardRemovedDebounceLoops = xmlWorker.GetIntFromXml("cardRemovedDebounceLoops");
 		
-		customFont = FontHelper.loadFont(
+		customFont = fontHelper.loadFont(
 			xmlWorker.GetDataFromXml("customFont.fileName"),
 			xmlWorker.GetIntFromXml("customFont.size"),
 			exceptionLogger

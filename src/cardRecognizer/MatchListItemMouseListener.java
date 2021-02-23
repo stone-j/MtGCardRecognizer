@@ -11,6 +11,8 @@ import processing.core.PImage;
 //https://coderanch.com/t/341446/java/detect-click-panel
 public class MatchListItemMouseListener implements MouseListener {
 	
+	ConsoleHelper consoleHelper = new ConsoleHelper();
+	
 	CardRecognizer cardRecognizer;
 	PagingHelper pagingHelper;
 	int index;
@@ -22,7 +24,7 @@ public class MatchListItemMouseListener implements MouseListener {
 	}
 	
 	public void mouseClicked(MouseEvent e) {
-		ConsoleHelper.PrintMessage("I have registered a click in card slot " + index + " !!!");
+		consoleHelper.PrintMessage("I have registered a click in card slot " + index + " !!!");
 		
 		cardRecognizer.deleteMatchedImage();
 		
@@ -54,7 +56,7 @@ public class MatchListItemMouseListener implements MouseListener {
 		
 		Thread t = new Thread(new Runnable() {
 		    public void run() {
-		    	cardRecognizer.identifiedCardMasterBorderPanel.setImage(CardRecognizer.cardsImagePath + cardRecognizer.editionCode.replace("con", "cfx").replace("CON", "cfx") + "/" + cardRecognizer.cardSeq + ".jpg");
+		    	cardRecognizer.identifiedCardMasterBorderPanel.setImage(cardRecognizer.cardsImagePath + cardRecognizer.editionCode.replace("con", "cfx").replace("CON", "cfx") + "/" + cardRecognizer.cardSeq + ".jpg");
 		    	cardRecognizer.webHelper.incrementQtyAndUndoLastUpdate(cardRecognizer.matchListMasterBorderPanel.getCardId(index), cardRecognizer.foilCheckboxState);
 		    }
 		});

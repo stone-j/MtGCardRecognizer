@@ -26,5 +26,8 @@ $RECYCLE.BIN/
 **/.settings
 *.bak
 *.log
+
+
 **/PalletteSampler
 **/config/urls_private.xml
+**/data/imageHashes_*.csv

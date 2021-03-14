@@ -19,7 +19,7 @@ public class MatchListMasterBorderPanel extends GraphicalBorderPanel {
 	MatchListPagingPanel matchListPagingPanel;
 	
 	public MatchListMasterBorderPanel(String borderFolder, Color bgColor, CardRecognizer myCardRecognizer, PagingHelper myPagingHelper) {
-		super(borderFolder);
+		super(borderFolder, false, "");
 		cardRecognizer = myCardRecognizer;
 		pagingHelper = myPagingHelper;
 		

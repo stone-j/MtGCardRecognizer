@@ -37,7 +37,7 @@ public class IdentifiedCardMasterBorderPanel extends GraphicalBorderPanel {
 	public CardRecognizer cardRecognizer;
 
 	public IdentifiedCardMasterBorderPanel(String borderFolder, Color bgColor, CardRecognizer cardRecognizer) {
-		super(borderFolder);
+		super(borderFolder, false, "");
 
 		rawIdentifiedCardPanel = new JPanelPaintable(bgColor, false);
 		identifiedCardPanel = new JPanelPaintable(bgColor, false);

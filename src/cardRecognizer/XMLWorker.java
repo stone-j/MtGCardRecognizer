@@ -16,7 +16,8 @@ public class XMLWorker extends core.XmlHelper {
 	//------------------------------------------------------------
 	//CONSTRUCTOR
 	//------------------------------------------------------------
-	public XMLWorker() {
+	public XMLWorker(boolean useAppData, String appDataFolderName) {
+		super(useAppData, appDataFolderName);
 		configXML = GetXMLFromFile(configFilePath);
 		urlsXML = GetXMLFromFile(urlsFilePath_private, urlsFilePath);
 	}

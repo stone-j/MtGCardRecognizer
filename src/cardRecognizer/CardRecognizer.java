@@ -78,13 +78,13 @@ public class CardRecognizer {
 	int applicationWidth;
 	int applicationHeight;
 	
-	XMLWorker xmlWorker = new XMLWorker();
+	XMLWorker xmlWorker = new XMLWorker(false, "");
 	ConsoleHelper consoleHelper = new ConsoleHelper();
 	LookAndFeelHelper lookAndFeelHelper = new LookAndFeelHelper();
 	WebcamHelper webcamHelper = new WebcamHelper();
 	ProcessingHelper processingHelper = new ProcessingHelper();
 	ImageHelper imageHelper = new ImageHelper();
-	FontHelper fontHelper = new FontHelper();
+	FontHelper fontHelper = new FontHelper(false, "");
 	
 	int webcamXScaler;
 	int webcamYScaler;
@@ -273,7 +273,7 @@ public class CardRecognizer {
 		
 		//webcamPanel.add(poop1, BorderLayout.LINE_END);
 		
-		webcamBorderPanel = new GraphicalBorderPanel(webcamPanel, GraphicalBorderPanel.PLAIN_PURPLE);
+		webcamBorderPanel = new GraphicalBorderPanel(webcamPanel, GraphicalBorderPanel.PLAIN_PURPLE, false, "");
 		
 		identifiedCardMasterBorderPanel = new IdentifiedCardMasterBorderPanel(GraphicalBorderPanel.FRAME06, globalBGColor, this);
 
@@ -316,7 +316,7 @@ public class CardRecognizer {
 
 	private void init() {
 		//size(1900, 740);
-		exceptionLogger = new ExceptionLogger();
+		exceptionLogger = new ExceptionLogger(false, "");
 		lookAndFeelHelper.setLookAndFeel("Metal");
 		
 		keyEventManager = new KeyEventManager(this);
@@ -1015,7 +1015,9 @@ public class CardRecognizer {
 		customFont = fontHelper.loadFont(
 			xmlWorker.GetDataFromXml("customFont.fileName"),
 			xmlWorker.GetIntFromXml("customFont.size"),
-			exceptionLogger
+			exceptionLogger,
+			false,
+			""
 		);
 		
 		updateQuantities = xmlWorker.GetIntFromXml("updateQuantities");

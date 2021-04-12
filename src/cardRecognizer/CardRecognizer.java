@@ -28,27 +28,26 @@ import processing.core.PVector;
 import processing.core.PConstants;
 import processing.data.Table;
 import processing.data.TableRow;
-
-import core.ImageHelper;
-import core.JPanelPaintable;
-import core.LookAndFeelHelper;
-import core.MathHelper;
-import core.ProcessingHelper;
-import core.WebcamHelper;
-import core.ColorHelper;
-import core.Comparator_IntegerArray;
-import core.ConsoleHelper;
-import core.ExceptionLogger;
-import core.FileHelper;
-import core.FontHelper;
-import core.GraphicalBorderPanel;
-import core.AudioHelper;
-import core.ArrayHelper;
+import core.helper.AudioHelper;
+import core.helper.ColorHelper;
+import core.helper.FileHelper;
+import core.helper.FontHelper;
+import core.helper.ImageHelper;
+import core.helper.MathHelper;
+import core.helper.ProcessingHelper;
+import core.logging.ConsoleHelper;
+import core.logging.ExceptionLogger;
 import core.openCV.Contour;
 import core.openCV.OpenCV;
 import core.openCV.OpenCVHelper;
 import core.openCV.Threshold;
 import core.openCV.WebcamLabel;
+import core.swingComponent.GraphicalBorderPanel;
+import core.swingComponent.JPanelPaintable;
+import core.swingComponent.LookAndFeelHelper;
+import core.variable.ArrayHelper;
+import core.variable.Comparator_IntegerArray;
+import core.webcam.WebcamHelper;
 
 /* FIXED: (root cause was calling garbage collection every loop.
 See system.gc() in the run() method for details.)

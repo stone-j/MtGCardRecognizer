@@ -2,9 +2,9 @@ package cardRecognizer;
 
 import java.awt.event.KeyEvent;
 
-import core.AudioHelper;
+import core.helper.AudioHelper;
 
-public class KeyEventManager extends core.KeyEventManager {
+public class KeyEventManager extends core.event.KeyEventManager {
 	
 	CardRecognizer cardRecognizer;
 	

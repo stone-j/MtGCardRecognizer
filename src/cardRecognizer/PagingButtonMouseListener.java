@@ -3,8 +3,8 @@ package cardRecognizer;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-import core.ConsoleHelper;
-import core.PagingHelper;
+import core.helper.PagingHelper;
+import core.logging.ConsoleHelper;
 
 public class PagingButtonMouseListener implements MouseListener {
 	

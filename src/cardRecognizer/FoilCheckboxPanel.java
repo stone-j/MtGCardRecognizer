@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 
-import core.BorderMaker;
+import core.swingComponent.BorderMaker;
 
 public class FoilCheckboxPanel extends JPanel {
 	

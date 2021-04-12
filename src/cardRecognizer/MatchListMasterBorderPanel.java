@@ -5,8 +5,8 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.util.ArrayList;
 
-import core.GraphicalBorderPanel;
-import core.JPanelPaintable;
+import core.swingComponent.GraphicalBorderPanel;
+import core.swingComponent.JPanelPaintable;
 import processing.core.PImage;
 
 public class MatchListMasterBorderPanel extends GraphicalBorderPanel {

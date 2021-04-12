@@ -4,8 +4,8 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 
-import core.AudioHelper;
-import core.ConsoleHelper;
+import core.helper.AudioHelper;
+import core.logging.ConsoleHelper;
 
 public class UpdateQuantityMouseListener implements MouseListener {
 	

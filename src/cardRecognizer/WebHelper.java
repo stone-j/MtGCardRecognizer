@@ -1,7 +1,7 @@
 package cardRecognizer;
 
-import core.ArrayHelper;
-import core.ProcessingHelper;
+import core.helper.ProcessingHelper;
+import core.variable.ArrayHelper;
 
 public class WebHelper {
 	

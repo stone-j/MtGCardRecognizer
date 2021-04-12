@@ -9,8 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
-import core.ImageHelper;
-import core.JPanelPaintable;
+import core.helper.ImageHelper;
+import core.swingComponent.JPanelPaintable;
 import processing.core.PImage;
 
 public class MatchListItemPanel extends JPanelPaintable {

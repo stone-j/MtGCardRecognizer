@@ -1,6 +1,6 @@
 package cardRecognizer;
 
-public class PagingHelper extends core.PagingHelper {	
+public class PagingHelper extends core.helper.PagingHelper {	
 
 	private int cardId;
 	private int qtyOfLastUpdate;

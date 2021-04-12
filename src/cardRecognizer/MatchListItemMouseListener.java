@@ -3,9 +3,9 @@ package cardRecognizer;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-import core.AudioHelper;
-import core.ConsoleHelper;
-import core.ProcessingHelper;
+import core.helper.AudioHelper;
+import core.helper.ProcessingHelper;
+import core.logging.ConsoleHelper;
 import processing.core.PImage;
 
 //https://coderanch.com/t/341446/java/detect-click-panel

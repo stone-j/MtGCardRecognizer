@@ -8,8 +8,8 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
-import core.JPanelPaintable;
-import core.PagingHelper;
+import core.helper.PagingHelper;
+import core.swingComponent.JPanelPaintable;
 
 public class MatchListPagingPanel extends JPanelPaintable {
 	

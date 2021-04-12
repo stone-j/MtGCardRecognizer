@@ -8,9 +8,9 @@ import java.awt.Insets;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import core.GraphicalBorderPanel;
-import core.ImageHelper;
-import core.JPanelPaintable;
+import core.helper.ImageHelper;
+import core.swingComponent.GraphicalBorderPanel;
+import core.swingComponent.JPanelPaintable;
 import processing.core.PImage;
 
 public class IdentifiedCardMasterBorderPanel extends GraphicalBorderPanel {

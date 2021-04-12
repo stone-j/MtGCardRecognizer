@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
-import core.JPanelPaintable;
+import core.swingComponent.JPanelPaintable;
 
 public class UpdateQuantityPanel extends JPanelPaintable {
 	
